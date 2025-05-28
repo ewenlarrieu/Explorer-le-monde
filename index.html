@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style .css" />
+
+    <script type="module" src="main.js"></script>
+    <script src="/components/CountryDetails.js"></script>
+    <title>Découvrez le monde</title>
+  </head>
+  <header>
+    <nav>
+      <svg
+        class="earth-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="black"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <path d="M2 12h20" />
+        <path d="M12 2a15.3 15.3 0 0 1 0 20a15.3 15.3 0 0 1 0 -20" />
+      </svg>
+      <h2>Explore The World</h2>
+      <input type="text" placeholder="Rechercher un pays..." id="pays" />
+      <svg
+        id="search-icon"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#888"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+    </nav>
+  </header>
+  <body>
+    <div class="container-1">
+      <div class="class-1">
+        <h1>Découvrez le monde</h1>
+        <div class="exemples">
+          <span class="exemple"
+            ><img
+              src="https://flagcdn.com/w40/fr.png"
+              alt="France"
+            />France</span
+          >
+          <span class="exemple"
+            ><img
+              src="https://flagcdn.com/w40/es.png"
+              alt="Espagne"
+            />Espagne</span
+          >
+          <span class="exemple"
+            ><img
+              src="https://flagcdn.com/w40/gb.png"
+              alt="Angleterre"
+            />Angleterre</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container-2">
+      <div class="class-2">
+        <div class="countryName"></div>
+      </div>
+    </div>
+  </body>
+</html>
