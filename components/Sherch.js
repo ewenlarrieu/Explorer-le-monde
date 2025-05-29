@@ -12,18 +12,19 @@ export function searchCountry() {
     })
     .then((data) => {
       const country = data[0];
-      const container = document.querySelector(".class-2");
-      const countryNameDiv = container.querySelector(".countryName");
+      const container2 = document.querySelector(".class-2");
 
-      container.querySelectorAll(".country-details").forEach((e) => e.remove());
-      countryNameDiv.innerHTML = "";
-      countryNameDiv.innerHTML = `<h2>${country.name.common}</h2>`;
+      container2.innerHTML = "";
 
-      const detailsDiv = document.createElement("div");
-      detailsDiv.className = "country-details";
-      detailsDiv.innerHTML = showGeographicDetails(country, {});
+      const Div = document.createElement("div");
 
-      container.appendChild(detailsDiv);
+      Div.innerHTML = `
+      
+          ${showGeographicDetails(country, {})}
+       
+      `;
+
+      container2.appendChild(Div);
     })
     .catch((err) => {
       console.error(err);
